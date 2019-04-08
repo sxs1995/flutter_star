@@ -20,7 +20,7 @@ class HomePageBody extends StatelessWidget {
               sliver: SliverFixedExtentList(
                 itemExtent: 152.0,
                 delegate: SliverChildBuilderDelegate(
-                  (context, index) => PlanetRow(planets[index]),
+                  (context, index) => PlanetSummary(planets[index]),
                   childCount: planets.length,
                 ),
               ),
@@ -28,13 +28,6 @@ class HomePageBody extends StatelessWidget {
           ],
         ),
       ),
-      // child: ListView.builder(
-      //   itemCount: planets.length,
-      //   itemExtent: 152.0,
-      //   itemBuilder: (BuildContext context, index) {
-      //     return PlanetRow(planets[index]);
-      //   },
-      // ),
     );
   }
 }
